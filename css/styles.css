@@ -3,18 +3,20 @@
 :root {
   --primary: #2e8b57;
   --secondary: #3cb371;
+  --tertiary: #f8f9fa;
+  --heading: #353839;
   --links: #2b2b2b;
   --text: #1c1c1c;
-  --bs-info: #36454f; /* Charcoal */
-  --bs-warning: #ffa500; /* Orange */
-
-  --bs-light: #f8f9fa; /* Light Gray */
-  --bs-dropdowns: #e0e9e2; /* Dark Gray */
-  --heading: #353839; /* Onyx */
 }
 
 main {
   padding: 20px;
+}
+
+/* Navs*/
+
+.first-nav-custom {
+  background-color: var(--tertiary);
 }
 
 .custom-font-title strong {
@@ -24,6 +26,7 @@ main {
 }
 
 .custom-font {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
 }
 
 ::placeholder {
@@ -35,7 +38,7 @@ main {
   color: var(--links);
 }
 
-.bg-second-nav-custom {
+.second-nav-custom {
   background-color: var(--primary);
 }
 
@@ -44,14 +47,38 @@ main {
   color: var(--links);
 }
 
+/* Cards */
+
+.releases-text {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.releases-dropdown-custom {
+  color: var(--primary);
+}
+
+.cards-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
 .cards-wrapper {
   display: flex;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 5px;
 }
 
-.card {
-  margin: 0 0.5em;
+.card.card-custom {
+  margin: 0.5rem;
+  border-color: var(--secondary);
+  width: 18rem;
+  flex: 0 0 auto;
+}
+
+.card-body {
+  background-color: var(--tertiary);
 }
 
 .img-container {
@@ -74,11 +101,114 @@ main {
   color: var(--text);
 }
 
+.title-text {
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.price-text {
+  font-weight: bold;
+}
+
+.price-text-discount {
+  text-decoration: line-through;
+}
+
+.discounted-price {
+  color: var(--secondary);
+}
+
 .card-btn-container {
   text-align: center;
 }
 
-.btn .btn-outline .card-btn-custom {
+.btn.card-btn-custom {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   border: 1px solid var(--secondary);
+  color: var(--text);
 }
+
+/* Info and promotions */
+
+.promotions {
+  margin: 0.5rem;
+  gap: 5px;
+}
+
+.promotion-card {
+  background-color: #f8f9fa;
+  border: 1px solid var(--secondary);
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.sell-books-card {
+  background-color: var(--secondary);
+  border: 1px solid var(--tertiary);
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+}
+
+.btn-bargain-books {
+  font-style: italic;
+  color: var(--secondary);
+}
+
+.btn-sell-books {
+  font-style: italic;
+  color: var(--tertiary);
+}
+
+.fa-arrow-right-long.bargain-arrow {
+  color: var(--secondary);
+}
+
+.promotions-links {
+  text-decoration: none;
+}
+
+.fa-arrow-right-long.sell-arrow {
+  color: var(--tertiary);
+}
+
+/* FAQs */
+
+/* .faqs-custom {
+  background-color: var(--secondary);
+} */
+
+.faqs-container {
+  background-color: var(--secondary);
+}
+
+.faqs-custom i {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.faqs-custom p {
+  margin: 0;
+  font-weight: bold;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: var(--text);
+}
+
+.faqs-custom .col {
+  padding: 10px;
+}
+
+.faq-item i {
+  display: block;
+}
+
+/* Footer */
+
+.footer-custom {
+  background-color: var(--tertiary);
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: var(--text);
+}
+
+.footer-bottom-custom {
+  background-color: var(--primary);
+}
+
+/* Add book form */
