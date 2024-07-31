@@ -203,7 +203,9 @@
       </nav>
     </header>
     <main>
-      <form class="d-flex flex-column align-items-center w-75 mx-auto">
+      <!-------------------------Add book------------------------->
+
+      <form class="d-flex flex-column align-items-center w-75 mx-auto mt-4">
         <div class="mb-3 w-100">
           <label for="product-name" class="form-label">Book name:</label>
           <input
@@ -245,7 +247,7 @@
         </div>
 
         <div class="form-group w-100">
-          <label for="book-price">Price:</label>
+          <label for="book-price" class="form-label">Price:</label>
           <div class="input-group">
             <input
               type="text"
@@ -256,6 +258,10 @@
             <span class="input-group-text">$</span>
             <span class="input-group-text">0.00</span>
           </div>
+        </div>
+
+        <div class="add-book-btn-container mt-4 mb-5">
+          <button class="btn add-btn-custom">Add book</button>
         </div>
       </form>
     </main>
