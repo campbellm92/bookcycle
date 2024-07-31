@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header>
+      <!-------------------------Navbar first tier------------------------->
+      <!--Branding-->
+      <nav class="navbar navbar-expand-lg .first-nav-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand custom-font-title" href="index.html">
+            <img
+              src="/assets/bookcycle-logo.svg"
+              alt="BookCycle Logo"
+              width="50"
+              height="50"
+              class="d-inline-block align-text-center"
+            />
+            <strong>BookCycle</strong>
+          </a>
+
+          <!--Hamburger menu/toggler button-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!--Search bar-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-lg-flex flex-grow-1 justify-content-center">
+              <form
+                class="d-flex mx-auto mb-2 mb-lg-0"
+                role="search"
+                style="width: 75%"
+              >
+                <input
+                  class="form-control me-2 w-100"
+                  type="search"
+                  placeholder="Find pre-loved books"
+                  aria-label="Search"
+                />
+                <span class="input-group-text border-0" id="search-addon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </form>
+            </div>
+
+            <!--Navbar links (right)-->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link links-custom" href="#">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link links-custom" href="#">Log in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-shopping-cart"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-------------------------Navbar second tier------------------------->
+
+      <!--Dropdowns-->
+      <nav class="navbar navbar-expand-lg navbar-dark second-nav-custom">
+        <div class="container-fluid">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fiction
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Literary</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Science Fiction</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Fantasy</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Historical Novel</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Non-fiction
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Philosophy</a></li>
+                <li><a class="dropdown-item" href="#">History</a></li>
+                <li><a class="dropdown-item" href="#">Psychology</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Textbooks
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Language textbooks</a>
+                </li>
+                <li><a class="dropdown-item" href="#">School books</a></li>
+                <li><a class="dropdown-item" href="#">University books</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cookbooks
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Italian Cuisine</a></li>
+                <li><a class="dropdown-item" href="#">Indian Cuisine</a></li>
+                <li><a class="dropdown-item" href="#">Vegan Cooking</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Art
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Modern Art</a></li>
+                <li><a class="dropdown-item" href="#">Ancient Art</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown dropdowns-custom">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Rare
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Signed by the Author</a>
+                </li>
+                <li><a class="dropdown-item" href="#">20th Century</a></li>
+                <li><a class="dropdown-item" href="#">Pre-20th Century</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <form class="d-flex flex-column align-items-center w-75 mx-auto">
+        <div class="mb-3 w-100">
+          <label for="product-name" class="form-label">Book name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="product-name"
+            placeholder="Enter the name of the book"
+          />
+        </div>
+
+        <div class="mb-3 w-100">
+          <label for="category">Select the book category:</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Fiction</option>
+            <option value="1">Non-fiction</option>
+            <option value="2">Textbook</option>
+            <option value="3">Cookbook</option>
+            <option value="4">Art</option>
+            <option value="5">Rare</option>
+          </select>
+        </div>
+
+        <div class="mb-3 w-100">
+          <label for="book-description" class="form-label"
+            >Enter a description of the book:</label
+          >
+          <textarea
+            class="form-control"
+            id="book-description"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <div class="mb-3 w-100">
+          <label for="cover-upload" class="form-label"
+            >Upload book cover image</label
+          >
+          <input class="form-control" type="file" id="cover-upload" />
+        </div>
+
+        <div class="form-group w-100">
+          <label for="book-price">Price:</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Dollar amount (with dot and two decimal places)"
+              id="book-price"
+            />
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+          </div>
+        </div>
+      </form>
+    </main>
+
+    <footer class="text-center text-lg-start footer-custom">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Shop with us</h5>
+
+            <ul class="list-unstyled mb-1">
+              <li>
+                <a href="#!" class="text-body">Advanced Search</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Browse Collections</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">My Account</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">View Basket</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Sell With Us</h5>
+
+            <ul class="list-unstyled mb-1">
+              <li>
+                <a href="#!" class="text-body">Start Selling</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Book Buyback</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Affiliates</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Refer a Seller</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">About Us</h5>
+
+            <ul class="list-unstyled mb-1">
+              <li>
+                <a href="#!" class="text-body">About BookCycle</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Media</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Careers</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Find Help</h5>
+
+            <ul class="list-unstyled mb-1">
+              <li>
+                <a href="#!" class="text-body">FAQs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-body">Customer Support</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center p-3 footer-bottom-custom">
+        © 2024 Copyright:
+        <a class="text-body" href="index.html">BookCycle</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
