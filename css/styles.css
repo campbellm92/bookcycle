@@ -4,7 +4,7 @@
   --primary: #2e8b57;
   --secondary: #3cb371;
   --tertiary: #f8f9fa;
-  --accent: #ff7f50;
+  --accent: #f5bd1f;
   --heading: #353839;
   --links: #2b2b2b;
   --text: #1c1c1c;
@@ -76,10 +76,13 @@ main {
   border-color: var(--secondary);
   width: 18rem;
   flex: 0 0 auto;
+  background-color: var(--tertiary);
 }
 
 .card-body {
-  background-color: var(--tertiary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .img-container {
@@ -136,16 +139,18 @@ main {
   gap: 5px;
 }
 
-.promotion-card {
+.card.promotion-card {
   background-color: #f8f9fa;
   border: 1px solid var(--secondary);
   font-family: "Rubik", Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
-.sell-books-card {
+.card.sell-books-card {
   background-color: var(--secondary);
   border: 1px solid var(--tertiary);
   font-family: "Rubik", Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 .btn-bargain-books {
@@ -172,10 +177,6 @@ main {
 
 /* FAQs */
 
-/* .faqs-custom {
-  background-color: var(--secondary);
-} */
-
 .faqs-container {
   background-color: var(--secondary);
 }
@@ -198,6 +199,15 @@ main {
 
 .faq-item i {
   display: block;
+}
+
+.faq-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.faq-item:hover {
+  transform: scale(1.1);
 }
 
 /* Footer */
@@ -261,9 +271,91 @@ main {
   color: var(--text);
 }
 
-.info-section-custom {
+.info-section {
   font-family: "Rubik", Arial, Helvetica, sans-serif;
   background-color: rgba(60, 179, 113, 0.1);
+  padding: 10px;
+}
+
+.container.info-container {
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .info-section .container.info-container {
+    width: 340px;
+  }
+}
+
+.nav-item.description a {
+  color: var(--text);
+}
+
+.nav-item.description a:hover {
+  color: var(--accent);
+}
+
+/* .similar-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.similar-items-container .card {
+  width: 300px;
+  height: 150px;
+  display: flex;
+}
+
+.similar-cards-bg {
+  background-color: var(--tertiary);
+}
+
+.similar-img img {
+  flex-shrink: 0;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-text.similar-heading {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 16px;
+} */
+
+.carousel.reviews-carousel {
+  background-color: var(--accent);
+  width: 75%;
+}
+
+@media (max-width: 768px) {
+  .carousel.reviews-carousel {
+    width: 320px;
+  }
+}
+
+.reviews-source-text {
+  padding-left: 10px;
+  font-size: 10px;
+  font-style: italic;
+}
+
+#reviewsCarousel .carousel-control-prev,
+#reviewsCarousel .carousel-control-next {
+  top: auto;
+  bottom: 50px;
+  width: 40px;
+}
+
+.carousel.reviews-carousel {
+  background-color: var(--accent);
+}
+
+#reviewsCarousel .carousel-control-prev,
+#reviewsCarousel .carousel-control-next {
+  top: auto;
+  bottom: 50px;
+  width: 40px;
 }
 
 /*                         Styles for add book form                       */
