@@ -25,7 +25,7 @@ Reuseable components could include:
 
 - Products on landing page:
 
-  - A card carousel would have been better, but this is outside of my current skillset
+  - A card carousel would have been better
 
 - Cleaner HTML & CSS
 
